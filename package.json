@@ -1,0 +1,30 @@
+{
+  "name": "automation-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_TLS_REJECT_UNAUTHORIZED=0 mocha -r ts-node/register test/**/*.test.ts"
+  },
+  "keywords": [],
+  "author": "Joshirao Narra",
+  "license": "ISC",
+  "mocha": {
+    "timeout": 60000
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^13.1.4",
+    "@types/supertest": "^2.0.8",
+    "chai": "^4.2.0",
+    "cross-env": "^6.0.3",
+    "mocha": "^7.0.0",
+    "mysql": "^2.18.1",
+    "supertest": "^4.0.2",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4",
+    "mysql-ssh": "^1.0.6",
+    "aws-sdk": "2.849.0"
+  }
+}
